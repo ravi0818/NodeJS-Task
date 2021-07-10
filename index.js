@@ -11,6 +11,6 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   const age = Number(req.body.age);
-  res.send("Your age is " + age/15 + " Dog years");
+  res.send("Your age in Dog years is: " + age/15 + " Dog years");
 });
 app.listen(port);
